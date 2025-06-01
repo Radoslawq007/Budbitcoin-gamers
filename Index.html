@@ -1,110 +1,73 @@
-<!DOCTYPE html><html lang="pl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BudBitcoin (BDBTC)</title>
+  <title>Support Page</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, #101f10, #1a3d1a);
-      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 100vh;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem;
     }
     h1 {
-      font-size: 3rem;
-      color: #aaffaa;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
-    p.tagline {
-      font-size: 1.2rem;
-      color: #dddddd;
-      margin-top: -10px;
-    }
-    .game-section {
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 2rem;
-      border-radius: 2rem;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-      max-width: 600px;
-      width: 90%;
-      margin-bottom: 2rem;
-    }
-    button {
-      background: #88cc88;
-      border: none;
-      padding: 1rem 2rem;
-      border-radius: 1rem;
-      font-size: 1.2rem;
-      color: #000;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-    button:hover {
-      background: #aaffaa;
-    }
-    .strain {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-top: 1rem;
-      color: #ffffaa;
-    }
-    footer {
-      margin-top: auto;
+    .wallet-box {
+      background-color: rgba(255, 255, 255, 0.1);
       padding: 1rem;
-      font-size: 0.9rem;
+      border-radius: 12px;
+      margin: 0.5rem 0;
+      width: 100%;
+      max-width: 600px;
+      word-break: break-word;
       text-align: center;
-      color: #aaa;
     }
-    .donate {
+    .label {
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+    }
+    .footer {
       margin-top: 2rem;
-      font-size: 0.95rem;
-      line-height: 1.4;
-    }
-    .donate code {
-      display: block;
-      background: #222;
-      padding: 0.5rem;
-      border-radius: 0.5rem;
-      word-wrap: break-word;
+      font-size: 0.9rem;
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>BudBitcoin (BDBTC)</h1>
-    <p class="tagline">Zagraj – Odkrywaj – Zarabiaj</p>
-  </header>  <section class="game-section">
-    <p>Kliknij przycisk, aby odkryć szczep i zdobyć BudBitcoina!</p>
-    <button onclick="revealStrain()">Odkryj szczep</button>
-    <div class="strain" id="strainResult"></div><div class="donate">
-  <p>Wesprzyj projekt:</p>
-  <strong>Ethereum / MATIC / USDT:</strong>
-  <code>0x805f8A0F4F83B405a36A8A4aeF24BF06EC643bAd</code>
-  <strong>Bitcoin:</strong>
-  <code>bc1qdqcm4v305enecxzv7234jyagpj02ft7re6uhmd</code>
-</div>
+  <h1>Support My Mission</h1>
+  <p>If you'd like to help, you can donate using any of the wallets below. Thank you.</p>
 
-  </section>  <footer>
-    Trwa aktualizacja... czekaj na nowe funkcje!
-  </footer>  <script>
-    const strains = [
-      "OG Kush",
-      "White Widow",
-      "Northern Lights",
-      "Blue Dream",
-      "Sour Diesel",
-      "Lemon Haze"
-    ];
-    function revealStrain() {
-      const strain = strains[Math.floor(Math.random() * strains.length)];
-      document.getElementById("strainResult").textContent = `Trafiłeś: ${strain}!`;
-    }
-  </script></body>
+  <div class="wallet-box">
+    <div class="label">Ethereum / Core / BNB / AVAX:</div>
+    0x805f8A0F4F83B405a36A8A4aeF24BF06EC643bAd
+  </div>
+
+  <div class="wallet-box">
+    <div class="label">Bitcoin:</div>
+    bc1qdqcm4v305enecxzv7234jyagpj02ft7re6uhmd
+  </div>
+
+  <div class="wallet-box">
+    <div class="label">TON:</div>
+    UQA4lgPyWjahMu2BBgAgZrFz9CCgGoFK24NgOXtw3FKvTryx
+  </div>
+
+  <div class="wallet-box">
+    <div class="label">Solana:</div>
+    E3mo9eFoGGX1YbWjCRAtq4GNL9DbexLG2cJooMhjoXNz
+  </div>
+
+  <div class="wallet-box">
+    <div class="label">PayPal:</div>
+    Radoslaw007@outlook.com
+  </div>
+
+  <div class="footer">All support is deeply appreciated 🙏</div>
+</body>
 </html>
